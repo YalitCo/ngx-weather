@@ -1,0 +1,336 @@
+%!Adobe-FontList 1.16
+%Locale:0x429
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:AgencyFB-Reg
+FamilyName:Agency FB
+StyleName:Regular
+FullName:Agency FB
+MenuName:Agency FB
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\AGENCYR.ttf
+DataFormat:sfntData
+FileLength:58920
+FileModTime:1438252072
+WeightClass:400
+WidthClass:3
+AngleClass:0
+NameArray:0,Mac,4,Agency FB
+NameArray:0,Win,1,Agency FB
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BBardiya
+FamilyName:B Bardiya
+StyleName:Regular
+FullName:B Bardiya
+MenuName:B Bardiya
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\BBARDIYA.TTF
+DataFormat:sfntData
+FileLength:59688
+FileModTime:1000143840
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,B Bardiya
+NameArray:0,Win,1,B Bardiya
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:DastNevis
+FamilyName:Dast Nevis
+StyleName:Regular
+FullName:Dast Nevis
+MenuName:Dast Nevis
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\danstevis.otf
+DataFormat:sfntData
+FileLength:50376
+FileModTime:1114055066
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Dast Nevis
+NameArray:0,Win,1,Dast Nevis
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FarNarm
+FamilyName:Far.Narm
+StyleName:Regular
+FullName:Farsi Narm
+MenuName:Far.Narm
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\Far_Narm.ttf
+DataFormat:sfntData
+FileLength:47500
+FileModTime:1296250484
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Farsi Narm
+NameArray:0,Win,1,Far.Narm
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:FarTV
+FamilyName:Far.TV
+StyleName:Regular
+FullName:Farsi TV
+MenuName:Far.TV
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\Far_TV.ttf
+DataFormat:sfntData
+FileLength:22196
+FileModTime:1313099502
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Farsi TV
+NameArray:0,Win,1,Far.TV
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\fontawesome-webfont.eot
+FileModTime:1372227032
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FontAwesome
+FamilyName:FontAwesome
+StyleName:Regular
+FullName:FontAwesome
+MenuName:FontAwesome
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\FontAwesome.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:61896
+FileModTime:1372227032
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,FontAwesome
+NameArray:0,Win,1,FontAwesome
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:IRANSans-Light
+FamilyName:IRANSans
+StyleName:Light
+FullName:IRANSans Light
+MenuName:IRANSans
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Light
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\iransans_light.ttf
+DataFormat:sfntData
+FileLength:103620
+FileModTime:1517919143
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,IRANSans Light
+NameArray:0,Mac,4,IRANSans Light
+NameArray:0,Win,1,IRANSans
+NameArray:0,Win,16,IRANSans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:IRANSansMobile-Bold
+FamilyName:IRANSansMobile
+StyleName:Bold
+FullName:IRANSansMobile Bold
+MenuName:IRANSansMobile
+StyleBits:2
+FamilyNameNative:
+StyleNameNative:Bold
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\iran_sans_bold.ttf
+DataFormat:sfntData
+FileLength:94472
+FileModTime:1517919019
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,IRANSansMobile Bold
+NameArray:0,Win,1,IRANSansMobile
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Mj_Flow
+FamilyName:Mj_Flow
+StyleName:Regular
+FullName:Mj_Flow
+MenuName:Mj_Flow
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\Mjflow.ttf
+DataFormat:sfntData
+FileLength:28628
+FileModTime:1405492862
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Mj_Flow
+NameArray:0,Win,1,Mj_Flow
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Mj_Flow-Bold
+FamilyName:Mj_Flow Bold
+StyleName:Bold
+FullName:Mj_Flow Bold
+MenuName:Mj_Flow Bold
+StyleBits:2
+FamilyNameNative:
+StyleNameNative:Bold
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\MJ_FLOWBOLD.TTF
+DataFormat:sfntData
+FileLength:29276
+FileModTime:1218809444
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Mj_Flow Bold
+NameArray:0,Win,1,Mj_Flow Bold
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Samim-Bold
+FamilyName:Samim
+StyleName:Bold
+FullName:Samim Bold
+MenuName:Samim
+StyleBits:2
+FamilyNameNative:
+StyleNameNative:Bold
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\Samim-Bold.ttf
+DataFormat:sfntData
+FileLength:84496
+FileModTime:1509584056
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Samim Bold
+NameArray:0,Win,1,Samim
+NameArray:0,Win,16,Samim
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Samim
+FamilyName:Samim
+StyleName:Regular
+FullName:Samim
+MenuName:Samim
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\Samim.ttf
+DataFormat:sfntData
+FileLength:78688
+FileModTime:1509584058
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Samim
+NameArray:0,Win,1,Samim
+NameArray:0,Win,16,Samim
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\Yekan.eot
+FileModTime:1402516813
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:WeblogmaYekan
+FamilyName:WeblogmaYekan
+StyleName:Regular
+FullName:WeblogmaYekan
+MenuName:WeblogmaYekan
+StyleBits:0
+FamilyNameNative:
+StyleNameNative:Regular
+FullNameNative:
+WritingScript:Arabic
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\Yekan.ttf
+DataFormat:sfntData
+FileLength:67252
+FileModTime:1402516509
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,WeblogmaYekan
+NameArray:0,Win,1,WeblogmaYekan
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\MerSad\Desktop\weather\Font\Yekan.woff
+FileModTime:1402516504
+%EndFont
+

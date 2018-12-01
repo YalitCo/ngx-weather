@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/bootstrap-grid.css",
               "src/styles.css"
             ],
             "scripts": []
