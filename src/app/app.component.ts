@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +8,18 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = '';
+  counts=['city_1','city_2','city_3','city_4'];
+  value='';
+  //@Input() value='';
 
 
   OnInputChange(event:any){
     console.log(event);
+    this.value=(<HTMLInputElement>event.target).value;
   }
 
   OnSearchClick(){
-    alert("hi");
-    
+    this.counts.push(this.value);
   }
   
 }

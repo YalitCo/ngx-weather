@@ -1,14 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="col-lg-12 con">
-  <h1 class="col-lg-12"> هوای {{title}} امروز چطوره؟</h1>
+  <h1 class="col-lg-12"> هوای {{title}} امروز چطوره؟ {{value}}</h1>
   <div class="col-lg-12 search_box">
     <input (input)="OnInputChange($event)" [(ngModel)]='title' type="text" id="search_input" class="col-lg-10 search"
       placeholder="نام شهر مورد نظر را وارد کنید">
     <input (click)="OnSearchClick()" type="button" id="search_butt" class="search_butt" id="getIt">
   </div>
   <div class="col-lg-10 row">
+      
     <div class="items col-lg-3 col-md-4 col-sm-6">
-      <app-weather-items></app-weather-items>
+      
+      <app-weather-items *ngFor="let i of counts;"></app-weather-items>
     </div>
   </div>
 </div>
