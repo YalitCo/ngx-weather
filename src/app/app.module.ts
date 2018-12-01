@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { WeatherItemsComponent } from './weather-items/weather-items.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WeatherItemsComponent
   ],
   imports: [
     BrowserModule,

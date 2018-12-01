@@ -8,4 +8,16 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = '';
+
+
+  OnInputChange(event:any){
+    console.log(event);
+  }
+
+  OnSearchClick(){
+    alert("hi");
+    
+  }
+  
 }
+

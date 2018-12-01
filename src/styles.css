@@ -69,6 +69,7 @@ body{
 
 .con > .search_box{
     height: 70px;
+    margin: 0 auto;
 }
 
 .con > .search_box > .search{
@@ -112,70 +113,6 @@ body{
     overflow: hidden;
     margin: 30px auto;
 } 
-
-.con > .row > .items > .item{
-    width: 100%;
-    margin: 5px auto;
-    margin-bottom: 10px;
-    background:linear-gradient(to top,#081233,#566696);
-    /* border:0.1px solid rgba(255, 255, 255, 0.425); */
-    border-radius: 20px;
-    overflow: hidden;
-    padding-bottom: 60px;
-    transition: 0.3s;
-}
-
-.con > .row > .items > .item:hover{
-    box-shadow: 0px 0px 5px #fff;
-    transition: 0.2s;
-}
-
-.con > .row > .items > .item > img{
-    display: block;
-    margin: 0px auto;
-    width: 70%;
-}
-
-.con > .row > .items > .item > h2{
-    color:#fff;
-    margin:0;
-    margin-right: 20px;
-    float: right;
-    line-height: 45px;
-}
-
-.con > .row > .items > .item > h1{
-    color:#fff;
-    float: left;
-    margin: 0;
-    position: relative;
-    left: 30px;
-    display: inline-block;
-    direction: ltr;
-}
-
-/* .con > .row > .items > .item > h1 > .temp_icon{
-    color: red;
-} */
-
-.con > .row > .items > .item > img.icon{
-    width: 10px;
-    display: inline-block;
-    float: left;
-    position: relative;
-    left: 30px;
-}
-
-.con > .row > .items > .item > span{
-    display: inline-block;
-    color:#feffd6;
-    width: 90%;
-    text-align: center;
-    margin-top:10px;
-    padding-right: 10px;
-}
-
-
 
 @media screen and (max-width:992px){
     .con > .search_box > .search_butt{
