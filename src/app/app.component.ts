@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +9,9 @@ import { Component, Input } from '@angular/core';
 
 export class AppComponent {
   title = '';
-  counts=['city_1','city_2','city_3','city_4'];
-  value='';
-  //@Input() value='';
+  counts=['city_1','city_2'];
+  //value='';
+  value:string;
 
 
   OnInputChange(event:any){
