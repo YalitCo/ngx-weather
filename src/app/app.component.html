@@ -7,10 +7,6 @@
     <input (click)="OnSearchClick()" type="button" id="search_butt" class="search_butt" id="getIt">
   </div>
   <div class="col-lg-10 row">
-      
-    <div class="items col-lg-3 col-md-4 col-sm-6">
-      
-      <app-weather-items *ngFor="let i of counts;"></app-weather-items>
-    </div>
+    <app-weather-items class="col-lg-3 col-md-4 col-sm-6" *ngFor="let i of counts;"></app-weather-items>
   </div>
 </div>
