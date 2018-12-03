@@ -20,11 +20,8 @@ export class AppComponent {
  
   citysArray;
 
-  //@Input() city: string;
-
-  constructor(private apiService: ApiService) {
-
-  }
+  constructor(private apiService: ApiService) { }
+  
 
   OnInputChange(event: any) {
     console.log(event);
@@ -40,8 +37,6 @@ export class AppComponent {
         response => console.log(response.main.temp)
         //response => this.citysArray = response
       );
-    //console.log(this.citysArray);
-    //this.citys.push(this.value);
     let c: ICitys = {
       name: this.value,
       desc: "",
