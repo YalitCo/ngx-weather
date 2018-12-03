@@ -21,7 +21,7 @@ export class AppComponent {
   citysArray;
 
   constructor(private apiService: ApiService) { }
-  
+
 
   OnInputChange(event: any) {
     console.log(event);
@@ -34,11 +34,12 @@ export class AppComponent {
     this.apiService
       .getPosts(this.url)
       .subscribe(
-        response => console.log(response.main.temp)
-        //response => this.citysArray = response
+        //response => console.log(response)
+        response => this.citysArray = response
       );
+     console.log(this.citysArray);
     let c: ICitys = {
-      name: this.value,
+      name: this.citysArray.name,
       desc: "",
       icon: "",
       temp: 0
