@@ -23,14 +23,12 @@ const httpOptions = {
  * Service to call all the API
  */
 export class ApiService {
-  @Input() city: string='mashhad';
 
-  url = "https://api.openweathermap.org/data/2.5/weather?q="+this.city+"&units=metric&APPID=7ea8f559ec5f1f0899b61c89d728a8b9";
 
   constructor(private http: HttpClient) { }
 
-  getPosts(){
-    return this.http.get(this.url);
+  getPosts(URL){
+    return this.http.get(URL);
   }
 
 }
