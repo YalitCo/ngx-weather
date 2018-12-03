@@ -16,7 +16,7 @@ export class WeatherItemsComponent implements OnInit {
   // url = "https://api.openweathermap.org/data/2.5/weather?q="+this.city+"&units=metric&APPID=7ea8f559ec5f1f0899b61c89d728a8b9";
   //@Input() citys: string='mashhad';
 
-
+@Input() c:string;
   
   
   // constructor(private apiService: ApiService) {}

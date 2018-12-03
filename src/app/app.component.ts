@@ -35,16 +35,21 @@ export class AppComponent {
       .getPosts(this.url)
       .subscribe(
         //response => console.log(response)
-        response => this.citysArray = response
+        response => {
+          
+          this.citysArray = response;
+          let c: ICitys = {
+            name: this.citysArray.name,
+            desc: this.citysArray.weather[0].description ,
+            icon: "assets/pics/"+this.citysArray.weather[0].icon+".png",
+            temp: this.citysArray.main.temp
+          }
+          this.citys.push(c);
+        }
+         
       );
-     console.log(this.citysArray);
-    let c: ICitys = {
-      name: this.citysArray.name,
-      desc: "",
-      icon: "",
-      temp: 0
-    }
-    this.citys.push(c);
+     //console.log(this.citysArray);
+    
   }
 
 

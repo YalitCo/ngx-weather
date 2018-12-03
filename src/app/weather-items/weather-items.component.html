@@ -1,8 +1,8 @@
 <div class="item">
-    <img src="assets/pics/01d.png">
-    <!-- <h2> {{ci.name}}</h2> -->
-    <h2> نام شهر</h2>
+    <img [src]="c.icon">
+    <h2> {{c.name}}</h2>
+    <!-- <h2> نام شهر</h2> -->
     <img class="icon" src="assets/pics/temp_icon.png">
-    <h1>15 °c</h1>
-    <span> توضیحات </span>
+    <h1>{{c.temp}}°c</h1>
+    <span> {{c.desc}} </span>
 </div>
