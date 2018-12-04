@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class WeatherItemsComponent implements OnInit {
 
-@Input() city:string;
-  
+  @Input() city: string;
+
   ngOnInit() {
 
   }

@@ -71,9 +71,6 @@ export class AppComponent {
     }
   }
 
-
-
-
   OnInputChange(event: any) {
     //console.log(event);
     this.input_value = (<HTMLInputElement>event.target).value;
