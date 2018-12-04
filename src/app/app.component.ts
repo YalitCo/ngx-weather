@@ -21,7 +21,7 @@ export class AppComponent {
 
   citysArray;
 
-  //lcity: string; //local city
+  loading=false; //flag for loading
 
   show: boolean = false; // show modal box for error
 
@@ -33,9 +33,13 @@ export class AppComponent {
       this.localCity(localStorage.getItem(c));
     }
   }
+  ngOnInit(){
+    
+  }
 
   localCity(local_city: string) {
     //alert("im in");
+    this.loading=true; // chnage icon to loading
     if (local_city != '') {
       this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + local_city + "&units=metric&APPID=7ea8f559ec5f1f0899b61c89d728a8b9";
 
@@ -44,7 +48,6 @@ export class AppComponent {
         .subscribe(
           //response => console.log(response)
           response => {
-
             this.citysArray = response;
             let c: ICitys = {
               name: this.citysArray.name,
@@ -62,6 +65,7 @@ export class AppComponent {
           }
 
         );
+        
     }
     //if input == empty
     else {
@@ -69,6 +73,7 @@ export class AppComponent {
       this.input_value = "";
       this.inputSearch.nativeElement.value = ''; //empty input value
     }
+    this.loading=false;
   }
 
   OnInputChange(event: any) {
@@ -76,7 +81,9 @@ export class AppComponent {
     this.input_value = (<HTMLInputElement>event.target).value;
   }
 
+
   OnSearchClick() {
+    this.loading=true; // chnage icon to loading
     if (this.input_value != '') {
       this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.input_value + "&units=metric&APPID=7ea8f559ec5f1f0899b61c89d728a8b9";
 
@@ -118,9 +125,12 @@ export class AppComponent {
       this.input_value = "";
       this.inputSearch.nativeElement.value = ''; //empty input value
     }
+    this.loading=false;
 
   }
 
+
+  
 
 
 }
