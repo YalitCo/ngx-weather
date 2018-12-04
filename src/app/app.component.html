@@ -6,8 +6,8 @@
 <div class="col-lg-12 con">
   <h1 class="col-lg-12"> هوای {{value}} امروز چطوره؟</h1>
   <div class="col-lg-12 search_box">
-    <input (input)="OnInputChange($event)" (keyup.enter)="OnSearchClick()" [(ngModel)]='city' type="text" id="search_input" class="col-lg-10 search"
-      placeholder="نام شهر مورد نظر را وارد کنید">
+    <input (input)="OnInputChange($event)" (keyup.enter)="OnSearchClick()"  type="text" id="search_input" class="col-lg-10 search"
+      placeholder="نام شهر مورد نظر را وارد کنید" #inputSearch>
     <input (click)="OnSearchClick()"  type="button" class="search_butt">
   </div>
   <div class="col-lg-10 row">

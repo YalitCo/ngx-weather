@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild, ElementRef } from '@angular/core';
 import { ICitys } from './icitys';
 import { ApiService } from './api.service';
 
@@ -15,14 +15,63 @@ export class AppComponent {
 
   value: string;
   url: string;
-
   citys: ICitys[] = [];
 
   citysArray;
 
+  lcity: string;
+
   show: boolean = false;
 
-  constructor(private apiService: ApiService) { }
+  @ViewChild('inputSearch') inputSearch: ElementRef;
+
+  constructor(private apiService: ApiService) {
+    for (let i = 0; i < localStorage.length; i++) {
+      let c: string = 'city' + i;
+      this.localCity(localStorage.getItem(c));
+    }
+
+  }
+
+
+  localCity(local_city: string) {
+    //alert("im in");
+    if (local_city != '') {
+      this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + local_city + "&units=metric&APPID=7ea8f559ec5f1f0899b61c89d728a8b9";
+
+      this.apiService
+        .getPosts(this.url)
+        .subscribe(
+          //response => console.log(response)
+          response => {
+
+            this.citysArray = response;
+            let c: ICitys = {
+              name: this.citysArray.name,
+              desc: this.citysArray.weather[0].description,
+              icon: "assets/pics/" + this.citysArray.weather[0].icon + ".png",
+              temp: Math.round(this.citysArray.main.temp)
+            }
+            this.citys.push(c);
+          },
+          error => {
+            //this.show = true; //show modal error
+            this.value = "";
+            this.inputSearch.nativeElement.value = ''; //empty input value
+
+          }
+
+        );
+    }
+    //if input == empty
+    else {
+      this.show = true; //show modal error
+      this.value = "";
+      this.inputSearch.nativeElement.value = ''; //empty input value
+    }
+  }
+
+
 
 
   OnInputChange(event: any) {
@@ -48,17 +97,34 @@ export class AppComponent {
               temp: Math.round(this.citysArray.main.temp)
             }
             this.citys.push(c);
+
+
+            for (let i = 0; i < this.citys.length; i++) {
+              localStorage.setItem('city' + i, this.citys[i].name);
+            }
+
+            this.value = "";
+            this.inputSearch.nativeElement.value = '';
           },
           error => {
-            this.show = true;
+            this.show = true; //show modal error
+            this.value = "";
+            this.inputSearch.nativeElement.value = ''; //empty input value
+
           }
 
         );
     }
-    else{
-      this.show = true;
+    //if input == empty
+    else {
+      this.show = true; //show modal error
+      this.value = "";
+      this.inputSearch.nativeElement.value = ''; //empty input value
     }
+
   }
+
+
 
 }
 
