@@ -14,6 +14,4 @@ export class WeatherItemsComponent implements OnInit {
 
   }
 
-
-
 }

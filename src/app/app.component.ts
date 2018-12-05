@@ -56,12 +56,12 @@ export class AppComponent {
               temp: Math.round(this.citysArray.main.temp)
             }
             this.citys.push(c);
+            this.loading=false;
           },
           error => {
-            //this.show = true; //show modal error
             this.input_value = "";
             this.inputSearch.nativeElement.value = ''; //empty input value
-
+            this.loading=false;
           }
 
         );
@@ -79,6 +79,10 @@ export class AppComponent {
   OnInputChange(event: any) {
     //console.log(event);
     this.input_value = (<HTMLInputElement>event.target).value;
+  }
+
+  ngDoCheck(){
+    console.log(this.loading);
   }
 
 
@@ -109,11 +113,13 @@ export class AppComponent {
 
             this.input_value = "";
             this.inputSearch.nativeElement.value = '';
+            this.loading=false;
           },
           error => {
             this.show = true; //show modal error
             this.input_value = "";
             this.inputSearch.nativeElement.value = ''; //empty input value
+            this.loading=false;
 
           }
 
@@ -124,8 +130,9 @@ export class AppComponent {
       this.show = true; //show modal error
       this.input_value = "";
       this.inputSearch.nativeElement.value = ''; //empty input value
+      this.loading=false;
     }
-    this.loading=false;
+    
 
   }
 
